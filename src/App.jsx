@@ -24,12 +24,13 @@ const App = () => {
     setTurns(0);
   };
 
-  //! handleChoice
+  //! Seçilen kartın kaçıncı kart olduğunu anladığımız yer.
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
-  //! useEffect for card matched info
+  //! Girilen her kart bilgisinde renderlanan, ve iki kart girildiği anda if bloğunu render eden yer. 
+  //! Kısaca şöyle diyebilirm, if bloğu çalıştığı anda açılan kartlar aynı ise bu kartların "matched" bilgisini true yapıyoruz.
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       setDisabled(true)
@@ -52,7 +53,7 @@ const App = () => {
     console.log(cards);
   }, [choiceOne, choiceTwo]);
 
-  //! resetTurn
+  //! Kart bilgilerini bellekten sildiğimiz yer.
   const resetTurn = () => {
     setChoiceOne(null);
     setChoiceTwo(null);
@@ -60,13 +61,7 @@ const App = () => {
     setDisabled(false);
   };
 
-  //! start a new game 
-  // useEffect(() => {
-  //   shuffleCards()
-  // }, [third])
-  
-
-  //! handleCardFlip
+  //! Kartın dönme efektinin çalışması için gerekli olan yer.
   const handleCardFlip = () => {
     setIsFlipped(true);
   };
