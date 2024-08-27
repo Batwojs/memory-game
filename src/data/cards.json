@@ -1,0 +1,28 @@
+{
+    "cardImages": [
+        {
+            "emoji": "🍇",
+            "matched": false
+        },
+        {
+            "emoji": "🍈",
+            "matched": false
+        },
+        {
+            "emoji": "🍉",
+            "matched": false
+        },
+        {
+            "emoji": "🍊",
+            "matched": false
+        },
+        {
+            "emoji": "🍋",
+            "matched": false
+        },
+        {
+            "emoji": "🥝",
+            "matched": false
+        }
+    ]
+}
